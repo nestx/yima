@@ -13,6 +13,11 @@ class Application
 
     private function __construct()
     {
+        if(!defined('APP_PATH')) throw new \Exception('Use of undefined constant APP_PATH - assumed \'APP_PATH\'');
+        if(!defined('INC_PATH')) throw new \Exception('Use of undefined constant INC_PATH - assumed \'INC_PATH\'');
+        if(!defined('CFG_PATH')) throw new \Exception('Use of undefined constant CFG_PATH - assumed \'CFG_PATH\'');
+        if(!defined('LIB_PATH')) throw new \Exception('Use of undefined constant LIB_PATH - assumed \'LIB_PATH\'');
+
 
     }
 
@@ -24,6 +29,11 @@ class Application
          }
 
          return self::$app;
+    }
+
+    public function run()
+    {
+
     }
 }
 
