@@ -1,0 +1,15 @@
+{
+    "name": "nestx/yima",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liuxu",
+            "email": "yimasoft@126.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Yima\\": "src/"}
+    }
+}
